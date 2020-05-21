@@ -3,6 +3,7 @@
 
 #include "contrast_enhancement.h"
 #include "agarwal.h"
+#include "agcwd.h"
 
 using namespace cv;
 using namespace std;
@@ -123,8 +124,8 @@ void contrastEnhancement(const cv::Mat& src, cv::Mat& dst)
 	grey.release();
 	img.release();
 	
-	//imshow("local", l_enhanced/255);
-	//imshow("global", g_enhanced/255);
+	/*imshow("local", l_enhanced/255);
+	imshow("global", g_enhanced/255);*/
 
 	//Weight Maps Calculation
 	Mat lg, gg;
